@@ -21,7 +21,7 @@ before_deploy:
   - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
 
 deploy:
-  - provider:
+  - provider: s3
       access_key_id: $AWS_ACCESS_KEY # Travis reop settiongs에 설정된 값
       secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
 
@@ -36,4 +36,4 @@ deploy:
 notifications:
   email:
     recipients:
-      -tjddns09@gmail.com
+      - tjddns09@gmail.com
