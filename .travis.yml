@@ -22,8 +22,8 @@ before_deploy:
 
 deploy:
   - provider: s3
-      access_key_id: $AWS_ACCESS_KEY # Travis reop settiongs에 설정된 값
-      secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+      access_key_id: AKIA5ASQQX74QHO764E6 # Travis reop settiongs에 설정된 값
+      secret_access_key: AKIA5ASQQX74QHO764E6 # Travis repo settings에 설정된 값
 
       bucket: freelec-springboot-build-psw
       region: ap-northeast-2
@@ -37,4 +37,3 @@ notifications:
   email:
     recipients:
       - tjddns09@gmail.com
-      - seongwoon09@naver.com
